@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, body {
+    height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+body  {
+margin: 0;
+font-family: 'Libre Franklin', sans-serif;
+font-size: 11pt;
+line-height: 16px;
+font-style: normal;
+color: #212721;
+vertical-align: top;
+text-align: left;
+background-color:#FFF;
+padding:0px;
+}
+
+.khmer {
+font-family: 'Siemreap', cursive;
+}
+
+.container {
+width: 1200px;
+margin: auto;
+padding:10px;
+}
+
+#logos {
+width: auto;
+height: 130px;	
+display: block;
+}
+
+#languages{
+float: right;
+margin-top: 50px;
+font-size: 16px;
+font-family: 'Libre Franklin', sans-serif;
+}
+
+
+#title {
+background: #0944AB;
+height: 460px;
+background-image:url("cover_image.png");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#title_text{
+display: block;
+font-weight: 700;
+letter-spacing: 1px;
+font-size: 33px;
+color: #FFF;	
+padding-top:110px;
+float: left;
+line-height: 43px;
+}
+
+#sm_image {
+width: 720px;
+height: auto;	
+display: block;
+margin: auto;
+}
+
+
+H1, H2, H3, H4, H5, H6 { 
+font-family: 'Libre Franklin', sans-serif;
+}
+
+H1 {
+font-size: 24px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-weight:600;
+vertical-align:bottom;
+color:#37475A;
+margin-bottom: 10px;
+line-height: 100%;
+}
+
+H2 {
+font-size: 22px;
+font-weight:600;
+letter-spacing:1px;
+margin-bottom:0px;
+color: #0944AB;
+line-height: 130%;
+}
+
+H3 {
+font-size: 16px;
+font-weight: 500;
+line-height: 25px;
+}
+
+a:link {
+color:#0A97E8;
+text-decoration: none;
+letter-spacing: 1px;
+}
+
+a:visited {
+color: #0A97E8;
+text-decoration: none;
+}
+
+a:hover {
+color: #0A97E8;
+}
+
+a.button {
+color: #FFF;
+font-weight: 500;
+background-color: #333;
+padding: 14px;
+border-radius: 8px;
+margin-top: 22px;
+font-size: 16px;
+}
+
+.footer {
+border-top: 3px solid #333;
+min-height: 100px;
+color: #FFF;
+padding: 30px;
+background-color: #333;
+margin-top: 50px;
+}
+
+
+.footer_km {
+border-top: 3px solid #333;
+min-height: 100px;
+color: #333;
+padding: 30px;
+background-color: #FFF;
+margin-top: 90px;
+}
+#footer_text {
+width: 1200px;
+margin: auto;
+font-size: 13px;
+line-height: 18px;
+}
+
+.box {
+border: 1px solid #CCC;
+border-radius: 10px;
+padding: 0px;
+width: 100%;
+height: 200px;
+margin-bottom: 50px;
+background-color: #EEE;
+}
+
+.box_text {
+padding: 20px;
+}
+
+/* [Object] Modal
+ * =============================== */
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .9);
+  transition: opacity .25s ease;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 900px;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 660px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1200px) {
+	
+  .modal__inner {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+/* Other
+ * =============================== */
+
+.btn {
+  cursor: pointer;
+  background: #0A97E8;
+  display: inline-block;
+  padding: 14px;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #3498db;
+}
+
+.btn:active {
+  background: #3498db;
+  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+}
+
+.btn-g {
+  cursor: pointer;
+  background: #333;
+    display: inline-block;
+  padding: 12px;
+  color: #fff;
+  border-radius: 8px;
+    font-size: 14px;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+.btn-g:hover,
+.btn-g:focus {
+  background: #3498db;
+}
+
+.btn-g:active {
+  background: #333;
+}
+
