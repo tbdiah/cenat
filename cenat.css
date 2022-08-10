@@ -51,7 +51,7 @@ font-family: 'Libre Franklin', sans-serif;
 #title {
 background: #0944AB;
 height: 460px;
-background-image:url("cover_image.png");
+background-image:url("images/cover_image.png");
 background-size: cover;
 background-repeat: no-repeat;
 }
@@ -148,12 +148,21 @@ padding: 30px;
 background-color: #FFF;
 margin-top: 90px;
 }
+
 #footer_text {
 width: 1200px;
 margin: auto;
 font-size: 13px;
-line-height: 18px;
+line-height: 18px;	
 }
+
+#footer_text img {
+float: right; 
+padding-left: 12px; 
+margin: 10px;
+height: 189px;
+width: auto;	
+	}
 
 .box {
 border: 1px solid #CCC;
@@ -310,3 +319,89 @@ padding: 20px;
   background: #333;
 }
 
+/*  GO FULL WIDTH AT LESS THAN 1200 PIXELS */
+
+@media only screen and (max-width: 1200px) {
+
+.container {
+  width: 100%;
+  padding: 10px;
+}
+
+#footer_text {
+  width: 100%;
+}
+}
+
+/*  GO FULL WIDTH AT LESS THAN 1000 PIXELS */
+
+@media only screen and (max-width: 1000px) {
+
+#languages {
+padding: 12px;
+}
+
+#title {
+height: 260px;
+}
+
+#title_text {
+ font-size: 140%;
+ line-height: 140%;
+ padding-top: 50px;
+ padding-left: 30px;
+}
+	
+H1 {
+font-size: 110%;
+	}
+H2 {
+font-size: 110%;
+	}
+
+H3 {
+font-size: 110%;
+	}
+
+	
+#logos {
+  width: auto;
+  width: 100%;
+  height: auto;
+}
+	
+#footer_text img {
+  float: none;
+  margin: auto;
+  height: 150px;
+  width: auto;
+  display: block;
+
+	}
+	
+}
+
+/*  GO FULL WIDTH AT LESS THAN 1000 PIXELS */
+
+@media only screen and (max-width: 420px) {
+
+.box img{
+display: none;	
+}
+	
+.box {
+height: 220px;
+}
+
+#title {
+height: 200px;
+	}
+	
+#footer_text img {
+height: 100px;
+	}	
+#title_text {
+font-size: 100%;
+	}
+	
+}
