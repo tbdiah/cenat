@@ -381,9 +381,9 @@ font-size: 110%;
 	
 }
 
-/*  GO FULL WIDTH AT LESS THAN 1000 PIXELS */
+/*  GO FULL WIDTH AT LESS THAN 600 PIXELS */
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 600px) {
 
 .box img{
 display: none;	
